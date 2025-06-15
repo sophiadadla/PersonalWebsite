@@ -59,6 +59,16 @@
   transform: scale(1.05);
 }
 
+.headshot-style {
+  width: 500px;
+  transition: transform 0.3s ease;
+}
+
+.headshot-style:hover {
+  filter: drop-shadow(0 0 15px #e6afd4);
+  transform: scale(1.02);
+}
+
 @layer base {
   :root {
     --background: 210 40% 98%;
@@ -131,14 +141,16 @@
 
 
 .card {
-  background: #dedcff;
+  background: #fff3fa;
   width: 150px;
   height: 180px;
   transition: transform 0.3s ease;
-  display: flex; 
-  flex-direction: column; 
-  justify-content: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  /* Add a shadow: */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* offset-x, offset-y, blur-radius, color */
 }
 
 .card:hover {

@@ -8,6 +8,8 @@ import { ProjectsSection } from "../components/ProjectsSection";
 import { ContactSection } from "../components/ContactSection";
 import { InterestsSection } from "../components/InterestsSection";
 import { ExperiencesSection } from "../components/ExperiencesSection";
+import { FadeIn } from "../components/FadeIn";
+
 
 export const Home = () => {
     return( 
@@ -16,13 +18,27 @@ export const Home = () => {
             <Navbar/>
             <ThemeToggle/>
             <main>
-                <HeroSection/>
-                <AboutSection />
-                <ExperiencesSection/>
-                <SkillsSection />
-                <ProjectsSection/>
-                <InterestsSection/>
-                <ContactSection/>
+                <FadeIn>
+                    <HeroSection/>
+                </FadeIn>
+                <FadeIn>
+                    <AboutSection />
+                </FadeIn>
+                <FadeIn>
+                    <ExperiencesSection/>
+                </FadeIn>
+                <FadeIn>
+                    <SkillsSection />
+                </FadeIn>
+                <FadeIn>
+                    <ProjectsSection/>
+                </FadeIn>
+                <FadeIn>
+                    <InterestsSection/>
+                </FadeIn>
+                <FadeIn>
+                    <ContactSection/>
+                </FadeIn>
             </main>
         </div>
     );

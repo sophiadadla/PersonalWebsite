@@ -21,7 +21,7 @@ export const HeroSection = () => {
           </div>
         </div>
         <div className="md:order-1 mt-8 md:mt-0">
-          <img src="personalwebsiteheadshot.png" className="image-style" alt="Sophia's headshot"></img>
+          <img src="personalwebsiteheadshot.png" className="headshot-style" alt="Sophia's headshot"></img>
         </div>
       </div>
     </section>

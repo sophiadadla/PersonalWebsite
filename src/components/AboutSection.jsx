@@ -6,12 +6,11 @@ import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
 export const AboutSection = () => {
-  const myLocation = [28.7499, -81.3323]; // Lake Mary, Florida, United States
+  const myLocation = [28.7499, -81.3323];
   const defaultZoom = 7;
 
-  const ufLocation = [29.6483, -82.3486]; // Latitude, Longitude for UF
+  const ufLocation = [29.6483, -82.3486]; 
 
-  // State for current time and timezone
   const [currentTime, setCurrentTime] = useState('');
   const [timezoneName, setTimezoneName] = useState('');
 
@@ -19,38 +18,29 @@ export const AboutSection = () => {
     const updateTime = () => {
       const now = new Date();
 
-      // Options for formatting time with timezone name
       const timeOptions = {
         hour: '2-digit',
         minute: '2-digit',
         second: '2-digit',
-        hour12: true, // Use 12-hour format with AM/PM
+        hour12: true, 
       };
 
-      // Get the formatted time string
       const formattedTime = now.toLocaleTimeString('en-US', timeOptions);
       setCurrentTime(formattedTime);
 
-      // Extract timezone name from the formatted string (more robust)
-      // Note: This tries to get the *local* machine's timezone name, which should match
-      // if the user's computer is set to the correct timezone for Lake Mary.
       const tz = Intl.DateTimeFormat('en-US', { timeZoneName: 'short' }).formatToParts(now)
                   .find(part => part.type === 'timeZoneName');
       setTimezoneName(tz ? tz.value : '');
     };
 
-    // Update time immediately on component mount
     updateTime();
 
-    // Set up interval to update time every second
     const intervalId = setInterval(updateTime, 1000);
 
-    // Clean up interval on component unmount
     return () => clearInterval(intervalId);
   }, []);
 
 
-  // Define the custom pulsating circle icon using L.divIcon
   const pulsatingCircleIcon = L.divIcon({
     className: 'pulsating-circle-marker',
     iconSize: [20, 20],
