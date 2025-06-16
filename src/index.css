@@ -142,21 +142,61 @@
 
 .card {
   background: #fff3fa;
-  width: 150px;
-  height: 180px;
   transition: transform 0.3s ease;
   display: flex;
+  width: 100px;
+  height:100px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* Add a shadow: */
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* offset-x, offset-y, blur-radius, color */
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+
+  --border-width: 1px;
+  border-radius: 1rem;
+  position: relative;
+  padding:20px;
+
+  background: hsl(from var(--surface-3) h s l / 0.25);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+
 }
 
 .card:hover {
 filter: drop-shadow(0 0 15px #e6afd4);
-  transform: scale(1.05);
+  transform: scale(1.4);
 }
+
+.glowy-orb {
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 189, 225, 0.9); 
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:
+    0 0 8px 3px rgba(255, 189, 225, 0.9), 
+    0 0 20px 8px rgba(255, 189, 225, 0.9),
+    0 0 40px 15px rgba(255, 218, 224, 0.9);
+  border: none;
+
+  transition: all 0.08s ease-in-out;
+}
+
+.glowy-orb:hover {
+  transform: scale(1.5);
+  box-shadow:
+    0 0 8px 3px rgba(255, 189, 225, 0.9), 
+    0 0 35px 8px rgba(255, 189, 225, 0.9),
+    0 0 40px 15px rgba(255, 218, 224, 0.9);
+
+  border: none;
+}
+
+
+
+
 
 @utility gradient-border {
   @apply relative rounded-md;

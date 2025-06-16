@@ -13,12 +13,6 @@ export const HeroSection = () => {
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl opacity-0 animate-fade-in-delay-3">
             — a curious and driven Computer Science student, learning, building, and growing through every line of code.
           </p>
-
-          <div className="opacity-0 animate-fade-in-delay-4 md:text-left">
-            <a href="#projects" className="cosmic-button">
-              Learn More
-            </a>
-          </div>
         </div>
         <div className="md:order-1 mt-8 md:mt-0">
           <img src="personalwebsiteheadshot.png" className="headshot-style" alt="Sophia's headshot"></img>

@@ -61,14 +61,15 @@ export const AboutSection = () => {
             <h3 className="text-2xl font-semibold">
               Aspiring Software Engineer & Student
             </h3>
-
-            <p className="text-muted-foreground">
-              I’m a fourth-year Computer Science student at the University of Florida’s Herbert Wertheim College of Engineering.
-            </p>
-
-            <p className="text-muted-foreground">
-            Through course-work, personal projects, and internships at Lockheed Martin, I've been a valuable member of teams of all sizes. I’ve contributed to software projects from ideation to deployment, deepening my appreciation for the full development lifecycle. I’m especially passionate about front-end development and UI/UX design, and I thrive in environments where I can collaborate cross-functionally to bring intuitive, high-impact products to life.
-            </p>
+            <div>
+              <p className="text-muted-foreground">
+                I’m a fourth-year Computer Science student at the University of Florida’s Herbert Wertheim College of Engineering.
+              </p>
+              <br></br>
+              <p className="text-muted-foreground">
+              Through course-work, personal projects, and internships at Lockheed Martin, I've been a valuable member of teams of all sizes. I’ve contributed to software projects from ideation to deployment, deepening my appreciation for the full development lifecycle. I’m especially passionate about front-end development and UI/UX design, and I thrive in environments where I can collaborate cross-functionally to bring intuitive, high-impact products to life.
+              </p>
+            </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
               <a href="#contact" className="cosmic-button">
