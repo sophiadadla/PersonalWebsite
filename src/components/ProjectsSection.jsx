@@ -3,8 +3,8 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "proj 1",
+    description: "info",
     image: "/projects/project1.png",
     tags: ["React", "TailwindCSS", "Supabase"],
     demoUrl: "#",
@@ -12,9 +12,9 @@ const projects = [
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "proj 2",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "info",
     image: "/projects/project2.png",
     tags: ["TypeScript", "D3.js", "Next.js"],
     demoUrl: "#",
@@ -22,9 +22,9 @@ const projects = [
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "proj 3",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "info",
     image: "/projects/project3.png",
     tags: ["React", "Node.js", "Stripe"],
     demoUrl: "#",
@@ -42,8 +42,7 @@ export const ProjectsSection = () => {
         </h2>
 
         <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my recent projects. Each project was carefully
-          crafted with attention to detail, performance, and user experience.
+          info about projects
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

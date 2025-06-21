@@ -16,7 +16,6 @@ export const Home = () => {
         <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
             <StarBackground />
             <Navbar/>
-            <ThemeToggle/>
             <main>
                 <FadeIn>
                     <HeroSection/>

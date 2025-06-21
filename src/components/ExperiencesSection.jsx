@@ -21,11 +21,27 @@ export const ExperiencesSection = () => {
             onClick={() => window.open('https://www.lockheedmartin.com/en-us/index.html', '_blank')}
           ></img>
           <div style={{padding: "30px"}}> {/* This div wraps the text content */}
-            <h3 className="text-2xl font-semibold whitespace-nowrap overflow-hidden text-ellipsis" style={{textAlign: "left"}}>
+            <h3 className="text-2xl font-semibold whitespace-nowrap overflow-hidden text-ellipsis mb-3" style={{textAlign: "left"}}>
               Software Engineering Intern at Lockheed Martin
             </h3>
+            <h4 className="mb-1 font-bold text-left text-primary ml-2.5">
+              Summer 2024
+            </h4>
             <p className="text-muted-foreground" style={{textAlign: "left"}}>
-              info about internship
+              <ul>
+                <li>
+                  • Collaborated with ONR representative to enhance military training simulation, implementing 3 UI features in JavaScript
+                </li>
+                <li>
+                  • Created a customizable radio emission heatmap via image-processing, using data structures to speed up rendering by 50%  
+                </li>
+                <li>
+                  • Improved a DoD-facing 30+ button toolbar with Bootstrap, adding a collapsible modal feature to cut screen clutter by 15%  
+                </li>
+                <li>
+                  • Worked on an Agile team of 20+ engineers to fulfill customer requests on-time, utilizing GitLab for project management
+                </li>
+              </ul>
             </p>
           </div>
         </div>
@@ -41,11 +57,24 @@ export const ExperiencesSection = () => {
             onClick={() => window.open('https://www.kidzhack.com/', '_blank')}
           ></img>
           <div style={{padding: "30px"}}> {/* This div wraps the text content */}
-            <h3 className="text-2xl font-semibold whitespace-nowrap overflow-hidden text-ellipsis" style={{textAlign: "left"}}>
+            <h3 className="text-2xl font-semibold whitespace-nowrap overflow-hidden text-ellipsis mb-3" style={{textAlign: "left"}}>
               Software Engineering Intern at KidzHack
             </h3>
+            <h4 className="mb-1 font-bold text-left text-primary ml-2.5">
+              Spring 2024
+            </h4>
             <p className="text-muted-foreground" style={{textAlign: "left"}}>
-              info about internship
+              <ul>
+                <li>
+                  • Implemented a scalable, cloud-based backend that monitors ~5.5K students' well-being across 10+ US middle schools
+                </li>
+                <li>
+                  • Developed 4 AWS Lambda functions to process ~20K daily HTTP requests from the Angular front-end
+                </li>
+                <li>
+                  • Configured an API Gateway to enable secure communication between user submissions and AWS Lambda functions
+                </li>
+              </ul>
             </p>
           </div>
         </div>

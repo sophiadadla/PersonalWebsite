@@ -42,7 +42,7 @@ const FADE_COLOR_DURATION = 8000;
 const FADE_IN_OUT_DURATION = 5000;
 const BLOB_ACTIVE_DURATION = 10000;
 const TOTAL_BLOB_LIFESPAN = FADE_IN_OUT_DURATION * 2 + BLOB_ACTIVE_DURATION;
-const MAX_BLOBS = 5;
+const MAX_BLOBS = 7;
 
 const generateBlobData = (id, appearTimeOffset = 0) => {
   return {
@@ -131,17 +131,17 @@ export const StarBackground = () => {
       setBlobs(newBlobsOnResize);
     };
 
-    const mouseMoveHandler = (e) => {
-      setMousePosition({ x: e.clientX, y: e.clientY });
-    };
+    // const mouseMoveHandler = (e) => {
+    //   setMousePosition({ x: e.clientX, y: e.clientY });
+    // };
 
     window.addEventListener("resize", resizeHandler);
-    window.addEventListener("mousemove", mouseMoveHandler);
+    // window.addEventListener("mousemove", mouseMoveHandler);
 
     return () => {
       cancelAnimationFrame(animationFrameRef.current);
       window.removeEventListener("resize", resizeHandler);
-      window.removeEventListener("mousemove", mouseMoveHandler);
+      //window.removeEventListener("mousemove", mouseMoveHandler);
     };
   }, []);
 
@@ -182,10 +182,7 @@ export const StarBackground = () => {
         const normalizedMouseX = (mousePosition.x - centerX) / centerX;
         const normalizedMouseY = (mousePosition.y - centerY) / centerY;
 
-        // ---
-        // Significantly increased reactionStrength for a highly noticeable effect
-        const reactionStrength = 150; // Try values like 100, 150, 200, 300
-        // ---
+        const reactionStrength = 150;
         const translateX = -normalizedMouseX * reactionStrength;
         const translateY = -normalizedMouseY * reactionStrength;
 
@@ -203,10 +200,7 @@ export const StarBackground = () => {
               backgroundColor: currentColor,
               borderRadius: blob.borderRadius,
               '--blob-color-rgb': getRgbValues(currentColor),
-              // ---
-              // Reduced transition duration to make the movement very snappy, almost instant
-              transition: 'transform 0.01s ease-out', // Or even 'none' for immediate snapping
-              // ---
+              transition: 'transform 0.01s ease-out',
             }}
           />
         );

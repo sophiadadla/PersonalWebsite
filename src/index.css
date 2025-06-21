@@ -48,7 +48,6 @@
   }
 }
 
-
 .image-style {
   width: 500px;
   transition: transform 0.3s ease;
@@ -82,20 +81,6 @@
     --border: 214 32% 91%;
   }
 
-  .dark {
-    --background: 222 47% 4%;
-    --foreground: 213 31% 91%;
-
-    --card: 222 47% 8%;
-
-    --primary: 250 65% 65%;
-    --primary-foreground: 213 31% 91%;
-
-    --border: 217 33% 20%;
-
-    --color-cosmic-button-bg: 242 100% 70%; 
-    --color-cosmic-button-fg: 213 31% 91%; 
-  }
   * {
     @apply border-border;
   }
@@ -136,7 +121,6 @@
   text-shadow: 0 0 10px rgba(167, 139, 250, 0.5);
 }
 
-
 .card {
   background: #fff3fa;
   transition: transform 0.3s ease;
@@ -156,39 +140,11 @@
   background: hsl(from var(--surface-3) h s l / 0.25);
   -webkit-backdrop-filter: blur(12px);
   backdrop-filter: blur(12px);
-
 }
 
 .card:hover {
-filter: drop-shadow(0 0 15px #ffffff);
+  filter: drop-shadow(0 0 15px #ffffff);
   transform: scale(1.4);
-}
-
-.glowy-orb {
-  width: 100px;
-  height: 100px;
-  background-color: rgba(255, 189, 225, 0.9); 
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow:
-    0 0 8px 3px rgba(255, 189, 225, 0.9), 
-    0 0 20px 8px rgba(255, 189, 225, 0.9),
-    0 0 40px 15px rgba(255, 218, 224, 0.9);
-  border: none;
-
-  transition: all 0.08s ease-in-out;
-}
-
-.glowy-orb:hover {
-  transform: scale(1.5);
-  box-shadow:
-    0 0 8px 3px rgba(255, 189, 225, 0.9), 
-    0 0 35px 8px rgba(255, 189, 225, 0.9),
-    0 0 40px 15px rgba(255, 218, 224, 0.9);
-
-  border: none;
 }
 
 
@@ -203,14 +159,12 @@ filter: drop-shadow(0 0 15px #ffffff);
   @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium
          transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
          hover:scale-105 active:scale-95;
-        color: 
-        }
+}
 
 .cosmic-button:hover {
   filter: drop-shadow(0 0 15px #ffffff);
   transform: scale(1.05);
 }
-
 
 @utility star {
   @apply absolute;
@@ -316,4 +270,10 @@ filter: drop-shadow(0 0 15px #ffffff);
 .gallery img:hover{
   width:  calc(var(--s) * var(--f));
   height: calc(var(--s) * var(--f));
+}
+
+li {
+  text-indent: -0.8em; /* Negative indent for the first line */
+  margin-left: 1.5em; /* Margin to push the rest of the lines */
+  margin-bottom: 0.5em; /* space between items */
 }
