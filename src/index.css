@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 @theme {
   --color-border: hsl(var(--border));
   --color-background: hsl(var(--background));
@@ -12,7 +11,7 @@
   --color-card: hsl(var(--card));
 
   --animate-float: float 6s ease-in-out infinite;
-  --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite; /* This keyframe definition can remain, though not directly used on .star's opacity */
+  --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
   --animate-fade-in: fade-in 0.7s ease-out forwards;
   --animate-fade-in-delay-1: fade-in 0.7s ease-out 0.2s forwards;
   --animate-fade-in-delay-2: fade-in 0.7s ease-out 0.4s forwards;
@@ -49,13 +48,14 @@
   }
 }
 
+
 .image-style {
   width: 500px;
   transition: transform 0.3s ease;
 }
 
 .image-style:hover {
-  filter: drop-shadow(0 0 15px #e6afd4);
+  filter: drop-shadow(0 0 15px #ffffff);
   transform: scale(1.05);
 }
 
@@ -80,9 +80,6 @@
     --primary-foreground: 210 40% 98%;
 
     --border: 214 32% 91%;
-
-    --color-cosmic-button-bg: 242 100% 63%; 
-    --color-cosmic-button-fg: 210 40% 98%;
   }
 
   .dark {
@@ -163,7 +160,7 @@
 }
 
 .card:hover {
-filter: drop-shadow(0 0 15px #e6afd4);
+filter: drop-shadow(0 0 15px #ffffff);
   transform: scale(1.4);
 }
 
@@ -195,9 +192,6 @@ filter: drop-shadow(0 0 15px #e6afd4);
 }
 
 
-
-
-
 @utility gradient-border {
   @apply relative rounded-md;
   background: linear-gradient(to right, hsl(var(--card)), hsl(var(--card)));
@@ -213,7 +207,7 @@ filter: drop-shadow(0 0 15px #e6afd4);
         }
 
 .cosmic-button:hover {
-  filter: drop-shadow(0 0 15px #e6afd4);
+  filter: drop-shadow(0 0 15px #ffffff);
   transform: scale(1.05);
 }
 
@@ -265,10 +259,6 @@ filter: drop-shadow(0 0 15px #e6afd4);
   }
 }
 
-.leaflet-tooltip-custom {
-
-}
-
 #root {
   max-width: 100%;
   margin: 0 auto;
@@ -299,4 +289,31 @@ filter: drop-shadow(0 0 15px #e6afd4);
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+.gallery {
+  --n: 3; /* number of rows*/
+  --m: 3; /* number of columns */
+  --s: 150px; /* controls the size */
+  --g: 10px;  /* controls the gap */
+  --f: 1.5;
+
+  display: grid;
+  gap: var(--g);
+  width:  calc(var(--m)*var(--s) + (var(--m) - 1)*var(--g));
+  height: calc(var(--n)*var(--s) + (var(--n) - 1)*var(--g));
+  grid-template-columns: repeat(var(--m),auto);
+}
+
+.gallery > img {
+  width: 0;
+  height: 0;
+  min-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+}
+
+.gallery img:hover{
+  width:  calc(var(--s) * var(--f));
+  height: calc(var(--s) * var(--f));
 }

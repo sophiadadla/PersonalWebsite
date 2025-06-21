@@ -1,13 +1,3 @@
-import {
-  Instagram,
-  Linkedin,
-  Mail,
-  MapPin,
-  Phone,
-  Send,
-  Twitch,
-  Twitter,
-} from "lucide-react";
 import { cn } from "@/lib/utils";
 import { useToast } from "@/hooks/use-toast";
 import { useState } from "react";
@@ -21,8 +11,17 @@ export const InterestsSection = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Hobbies & Interests
         </h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <p className="mb-8">Info about my hobbies</p>
+        <div className="gallery mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 place-items-center">
+          <img src="public\IMG_1424.jpg"></img>
+          <img src="public\IMG_0227.JPG"></img>
+          <img src="public\DSCN0126.JPG"></img>
+          <img src="public\272b9136-5d8c-48c6-94a8-a40bc094e0c0.jpg"></img>
+          <img src="public\IMG_3370.jpg"></img>
+          <img src="public\IMG_3539.JPG"></img>
+          <img src="public\IMG_3356.jpg"></img>
+          <img src="public\IMG_2748.jpg"></img>
+          <img src="public\7908693121584155030.JPG"></img>
         </div>
       </div>
     </section>

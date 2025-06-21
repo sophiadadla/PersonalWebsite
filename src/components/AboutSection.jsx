@@ -67,7 +67,7 @@ export const AboutSection = () => {
               </p>
               <br></br>
               <p className="text-muted-foreground">
-              Through course-work, personal projects, and internships at Lockheed Martin, I've been a valuable member of teams of all sizes. I’ve contributed to software projects from ideation to deployment, deepening my appreciation for the full development lifecycle. I’m especially passionate about front-end development and UI/UX design, and I thrive in environments where I can collaborate cross-functionally to bring intuitive, high-impact products to life.
+              Through course-work, personal projects, and internships at Lockheed Martin, I've been a valuable member of teams of all sizes. I’ve contributed to software projects from ideation to deployment, deepening my appreciation for the full development lifecycle. I’m especially passionate about front-end development and UI/UX design, and I thrive in environments where I can collaborate with others to bring intuitive, high-impact products to life.
               </p>
             </div>
 
