@@ -5,7 +5,7 @@ const projects = [
     id: 1,
     title: "GatorGoalMate",
     description: "Social media platform for students to set, track, and achieve their academic, personal, and fitness goals.",
-    image: "/GatorGoalMateLogo (1).png",
+    image: "GatorGoalMateLogo (1).png",
     tags: ["React.js", "Node.js", "MongoDB"],
     demoUrl: "https://youtu.be/Cqd6nSOu-go?si=MLLt9eKrTsEsZPK6",
     githubUrl: "https://github.com/lmdulick/GatorGoalMate",
