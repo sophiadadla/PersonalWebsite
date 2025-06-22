@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "/src/lib/utils.js";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
@@ -30,13 +30,11 @@ export const Navbar = () => {
     
     if (element) {
       if (sectionId === 'hero') {
-        // For hero, just scroll to top
         window.scrollTo({ 
           top: 0, 
           behavior: 'smooth' 
         });
       } else {
-        // For other sections, use scrollIntoView with offset
         const navbarHeight = 80;
         const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
         const offsetPosition = elementPosition - navbarHeight;
