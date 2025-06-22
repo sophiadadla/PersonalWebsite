@@ -10,6 +10,5 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src")
     } 
   },
-  base: "/PersonalWebsite",
+  base: process.env.NODE_ENV === 'production' ? "/PersonalWebsite/" : "/",
 })
-
