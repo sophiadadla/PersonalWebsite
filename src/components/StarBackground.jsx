@@ -24,7 +24,6 @@ const parseRgba = (rgbaString) => {
       a: match[4] ? parseFloat(match[4]) : 1,
     };
   } else {
-    console.error("parseRgba: No regex match found for string:", rgbaString);
     return { r: 0, g: 0, b: 0, a: 0 };
   }
 };

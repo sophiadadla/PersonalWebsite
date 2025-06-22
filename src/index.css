@@ -147,6 +147,30 @@
   transform: scale(1.4);
 }
 
+.big-card {
+  
+}
+
+.big-card:hover {
+  background: #fff3fa;
+  transition: transform 0.3s ease;
+  display: flex;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+
+  --border-width: 1px;
+  border-radius: 1rem;
+  position: relative;
+  padding:20px;
+
+  background: hsl(from var(--surface-3) h s l / 0.25);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+
 
 @utility gradient-border {
   @apply relative rounded-md;
