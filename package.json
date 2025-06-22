@@ -1,6 +1,6 @@
 {
   "name": "vite-project",
-  "homepage": "https://sophiadadla.github.io/PersonalWebsite",
+  "homepage": "https://sophiadadla.github.io/PersonalWebsite/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "predeplpy": "npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
