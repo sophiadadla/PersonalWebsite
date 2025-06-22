@@ -3,13 +3,13 @@ import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const navItems = [
-  { name: "Home", href: "#hero" },
-  { name: "About", href: "#about" },
-  { name: "Experiences", href: "#experiences" },
-  { name: "Skills", href: "#skills" },
-  { name: "Projects", href: "#projects" },
-  { name: "Interests", href: "#interests" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "/hero" },
+  { name: "About", href: "/about" },
+  { name: "Experiences", href: "/experiences" },
+  { name: "Skills", href: "/skills" },
+  { name: "Projects", href: "/projects" },
+  { name: "Interests", href: "/interests" },
+  { name: "Contact", href: "/contact" },
 ];
 
 export const Navbar = () => {
