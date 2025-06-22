@@ -25,10 +25,20 @@ export const ExperiencesSection = () => {
               Software Engineering Intern at Lockheed Martin
             </h3>
             <h4 className="mb-1 font-bold text-left text-primary ml-2.5">
-              Summer 2024
+              Summer 2025
             </h4>
             <p className="text-muted-foreground" style={{textAlign: "left"}}>
               <ul>
+                <li>
+                  • in progress
+                </li>
+              </ul>
+            </p>
+            <h4 className="mb-1 font-bold text-left text-primary ml-2.5">
+              Summer 2024
+            </h4>
+            <p className="text-muted-foreground" style={{textAlign: "left"}}>
+              <ul className="mb-3">
                 <li>
                   • Collaborated with ONR representative to enhance military training simulation, implementing 3 UI features in JavaScript
                 </li>

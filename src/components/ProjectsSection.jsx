@@ -3,30 +3,30 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "proj 1",
-    description: "info",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "GatorGoalMate",
+    description: "Social media platform for students to set, track, and achieve their academic, personal, and fitness goals.",
+    image: "/GatorGoalMateLogo (1).png",
+    tags: ["React.js", "Node.js", "MongoDB"],
+    demoUrl: "https://youtu.be/Cqd6nSOu-go?si=MLLt9eKrTsEsZPK6",
+    githubUrl: "https://github.com/lmdulick/GatorGoalMate",
   },
   {
     id: 2,
-    title: "proj 2",
+    title: "TEMPER",
     description:
-      "info",
+      "in progress :)",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
+    tags: ["React.js", "skil22", "skill3"],
     demoUrl: "#",
     githubUrl: "#",
   },
   {
     id: 3,
-    title: "proj 3",
+    title: "RunWise",
     description:
-      "info",
+      "coming soon...",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
+    tags: ["React.js", "Java", "PostgreSQL"],
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -36,26 +36,21 @@ export const ProjectsSection = () => {
   return (
     <section id="projects" className="py-24 px-4 relative">
       <div className="container mx-auto max-w-5xl">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold mb-11 text-center">
           {" "}
           Featured Projects
         </h2>
-
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          info about projects
-        </p>
-
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, key) => (
             <div
               key={key}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
-              <div className="h-48 overflow-hidden">
+              <div className="h-48 overflow-hidden justify-center items-center flex">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-auto h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
               </div>
 

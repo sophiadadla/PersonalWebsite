@@ -11,7 +11,7 @@ export const InterestsSection = () => {
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Hobbies & Interests
         </h2>
-        <p className="mb-8">Info about my hobbies</p>
+        <p className="mb-8 max-w-2xl m-auto">Outside of coding, I'm passionate about staying active—whether that's hiking with my family, surfing, or attending my local run club. I'm also a devoted Florida Gators fan and matcha lover.</p>
         <div className="gallery mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 place-items-center">
           <img src="public\IMG_1424.jpg"></img>
           <img src="public\IMG_0227.JPG"></img>
