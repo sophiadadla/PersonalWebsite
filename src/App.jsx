@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <Toaster />
-      <HashRouter>
+      <HashRouter basename="/PersonalWebsite">
         <Routes>
           <Route index element={<Home />} />
           <Route path="*" element={<NotFound />} />
