@@ -42,15 +42,16 @@ export const AboutSection = () => {
 
   const scrollToContact = () => {
     const element = document.getElementById('contact');
+    
     if (element) {
       const navbarHeight = 80;
-      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-      const offsetPosition = elementPosition - navbarHeight;
-      
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
+        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition - navbarHeight;
+        
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
     }
   };
 
