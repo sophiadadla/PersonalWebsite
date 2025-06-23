@@ -41,7 +41,7 @@ const FADE_COLOR_DURATION = 8000;
 const FADE_IN_OUT_DURATION = 5000;
 const BLOB_ACTIVE_DURATION = 10000;
 const TOTAL_BLOB_LIFESPAN = FADE_IN_OUT_DURATION * 2 + BLOB_ACTIVE_DURATION;
-const MAX_BLOBS = 7;
+const MAX_BLOBS = 8;
 
 const generateBlobData = (id, appearTimeOffset = 0) => {
   return {

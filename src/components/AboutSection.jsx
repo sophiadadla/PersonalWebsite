@@ -40,6 +40,19 @@ export const AboutSection = () => {
     return () => clearInterval(intervalId);
   }, []);
 
+  const scrollToContact = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      const navbarHeight = 80;
+      const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+      const offsetPosition = elementPosition - navbarHeight;
+      
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
 
   const pulsatingCircleIcon = L.divIcon({
     className: 'pulsating-circle-marker',
@@ -47,7 +60,6 @@ export const AboutSection = () => {
     iconAnchor: [10, 10],
     popupAnchor: [0, -10],
   });
-
 
   return (
     <section id="about" className="py-24 px-4 relative">
@@ -63,18 +75,21 @@ export const AboutSection = () => {
             </h3>
             <div>
               <p className="text-muted-foreground">
-                I’m a fourth-year Computer Science student at the University of Florida’s Herbert Wertheim College of Engineering.
+                I'm a fourth-year Computer Science student at the University of Florida's Herbert Wertheim College of Engineering.
               </p>
               <br></br>
               <p className="text-muted-foreground">
-              Through course-work, personal projects, and internships at Lockheed Martin, I've been a valuable member of teams of all sizes. I’ve contributed to software projects from ideation to deployment, deepening my appreciation for the full development lifecycle. I’m especially passionate about front-end development and UI/UX design, and I thrive in environments where I can collaborate with others to bring intuitive, high-impact products to life.
+              Through course-work, personal projects, and internships at Lockheed Martin, I've been a valuable member of teams of all sizes. I've contributed to software projects from ideation to deployment, deepening my appreciation for the full development lifecycle. I'm especially passionate about front-end development and UI/UX design, and I thrive in environments where I can collaborate with others to bring intuitive, high-impact products to life.
               </p>
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
-              <a href="contact" className="cosmic-button">
+              <button
+                onClick={scrollToContact}
+                className="cosmic-button"
+              >
                 Get In Touch
-              </a>
+              </button>
 
               <a
                 href="/Dadla+Sophia+UFlorida+Resume+2025.pdf"
