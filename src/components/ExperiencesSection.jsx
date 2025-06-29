@@ -27,18 +27,15 @@ export const ExperiencesSection = () => {
             <h4 className="mb-1 font-bold text-left text-primary ml-2.5">
               Summer 2025
             </h4>
-            <p className="text-muted-foreground" style={{textAlign: "left"}}>
-              <ul>
+              <ul className="text-muted-foreground" style={{textAlign: "left"}}>
                 <li>
                   • in progress
                 </li>
               </ul>
-            </p>
             <h4 className="mb-1 font-bold text-left text-primary ml-2.5">
               Summer 2024
             </h4>
-            <p className="text-muted-foreground" style={{textAlign: "left"}}>
-              <ul className="mb-3">
+              <ul className="text-muted-foreground mb-3" style={{textAlign: "left"}}>
                 <li>
                   • Collaborated with ONR representative to enhance military training simulation, implementing 3 UI features in JavaScript
                 </li>
@@ -52,7 +49,6 @@ export const ExperiencesSection = () => {
                   • Worked on an Agile team of 20+ engineers to fulfill customer requests on-time, utilizing GitLab for project management
                 </li>
               </ul>
-            </p>
           </div>
         </div>
 
@@ -73,8 +69,7 @@ export const ExperiencesSection = () => {
             <h4 className="mb-1 font-bold text-left text-primary ml-2.5">
               Spring 2024
             </h4>
-            <p className="text-muted-foreground" style={{textAlign: "left"}}>
-              <ul>
+              <ul className="text-muted-foreground" style={{textAlign: "left"}}>
                 <li>
                   • Implemented a scalable, cloud-based backend that monitors ~5.5K students' well-being across 10+ US middle schools
                 </li>
@@ -85,7 +80,6 @@ export const ExperiencesSection = () => {
                   • Configured an API Gateway to enable secure communication between user submissions and AWS Lambda functions
                 </li>
               </ul>
-            </p>
           </div>
         </div>
       </div>
