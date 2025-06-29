@@ -5,13 +5,13 @@ export const ExperiencesSection = () => {
 
   return (
     <section id="experiences" className="py-24 px-4 relative bg-secondary/30">
-      <div className="container mx-auto max-w-5xl"> {/* This container centers the whole section */}
+      <div className="container mx-auto max-w-5xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
           Professional Experiences
         </h2>
 
         {/* Lockheed Martin Experience */}
-        <div className="flex items-start space-x-6 mb-12" style={{alignItems: "center"}}> {/* Changed to items-start for top alignment */}
+        <div className="flex items-start space-x-6 mb-12" style={{alignItems: "center"}}>
           <img
             className="image-style w-[350px] flex-shrink-0"
             src="lockheed-martin.png"
@@ -53,16 +53,16 @@ export const ExperiencesSection = () => {
         </div>
 
         {/* KidzHack Experience */}
-        <div className="flex items-start space-x-6"  style={{alignItems: "center"}}> {/* Changed to items-start for top alignment */}
+        <div className="flex items-start space-x-6"  style={{alignItems: "center"}}>
           <img
-            className="image-style w-[230px] flex-shrink-0" // Explicit width and prevents shrinking
+            className="image-style w-[230px] flex-shrink-0" 
             src="kidzhack.png"
             style={{
               width: "300px"
             }}
             onClick={() => window.open('https://www.kidzhack.com/', '_blank')}
           ></img>
-          <div style={{padding: "30px"}} className="big-card"> {/* This div wraps the text content */}
+          <div style={{padding: "30px"}} className="big-card">
             <h3 className="text-2xl font-semibold whitespace-nowrap overflow-hidden text-ellipsis mb-3" style={{textAlign: "left"}}>
               Software Engineering Intern at KidzHack
             </h3>
