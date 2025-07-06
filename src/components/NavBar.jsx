@@ -35,12 +35,10 @@ export const Navbar = () => {
           behavior: 'smooth' 
         });
       } else {
-        const navbarHeight = 80;
         const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
-        const offsetPosition = elementPosition - navbarHeight;
         
         window.scrollTo({
-          top: offsetPosition,
+          top: elementPosition,
           behavior: 'smooth'
         });
       }
