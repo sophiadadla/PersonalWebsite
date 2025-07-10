@@ -49,10 +49,10 @@ export const Navbar = () => {
     <nav 
       className={cn(
         "fixed w-full z-[2000] transition-all duration-300",
-        isMenuOpen 
-          ? "py-5 bg-background" // solid background when menu is open
-          : isScrolled 
-            ? "py-3 bg-background/80 backdrop-blur-md shadow-xs" 
+        isMenuOpen
+          ? "py-5 bg-white"
+          : isScrolled
+            ? "py-3 bg-background/80 backdrop-blur-md shadow-xs"
             : "py-5"
       )}
     >
