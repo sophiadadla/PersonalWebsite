@@ -29,8 +29,17 @@ export const ExperiencesSection = () => {
             </h4>
               <ul className="text-muted-foreground" style={{textAlign: "left"}}>
                 <li>
-                  • in progress
+                  •	Contributed to the codebase of a simulation configuration tool used in naval training, developing in a Linux environment
                 </li>
+                <li>
+                  •	Redesigned and implementing multiple interfaces for a more intuitive UI/UX with React.js and HTML/CSS
+                </li>
+                <li>
+                  •	Constructed CI/CD pipelines using Robot Framework with Python and Selenium to validate application functionality
+                </li>
+                <li>
+                  •	Travelled to training site to support clients and gather feedback on a new C2 system in order to improve UI/UX 
+                </li>                
               </ul>
             <h4 className="mb-1 font-bold text-left text-primary ml-2.5">
               Summer 2024

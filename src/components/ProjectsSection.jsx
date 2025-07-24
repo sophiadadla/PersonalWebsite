@@ -14,21 +14,19 @@ const projects = [
     id: 2,
     title: "TEMPER",
     description:
-      "in progress :)",
+      "REST API and GUI for a risk-management temperature monitoring system.",
     image: "",
-    tags: ["React.js", "skil22", "skill3"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["React.js", "Python Flask", "PostgreSQL"],
   },
   {
     id: 3,
-    title: "RunWise",
+    title: "PowerPace",
     description:
-      "coming soon...",
+      "Web app made for hybrid athletes to monitor strength and cardio activities using data from Strava API.",
     image: "",
-    tags: ["React.js", "Java", "PostgreSQL"],
+    tags: ["React.js", "Java", "MongoDB"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/sophiadadla/PowerPace",
   },
 ];
 
