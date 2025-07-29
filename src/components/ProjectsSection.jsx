@@ -14,50 +14,53 @@ const projects = [
     id: 2,
     title: "TEMPER",
     description:
-      "REST API and GUI for a risk-management temperature monitoring system.",
-    image: "",
+      "REST API and GUI for a risk-management temperature monitoring system, integrated with an NTI sensor.",
+    image: "internss.jpg",
     tags: ["React.js", "Python Flask", "PostgreSQL"],
   },
   {
     id: 3,
     title: "PowerPace",
     description:
-      "Web app made for hybrid athletes to monitor strength and cardio activities using data from Strava API.",
-    image: "",
-    tags: ["React.js", "Java", "MongoDB"],
-    demoUrl: "#",
+      "In progress: Web application for hybrid athletes to monitor strength and cardio activities using their data from the Strava API.",
+    image: "powerpacelogo.png",
+    tags: ["React.js", "Java Spring Boot"],
+    // demoUrl: "#",
     githubUrl: "https://github.com/sophiadadla/PowerPace",
   },
+  {
+    id: 4,
+    title: "CineMatch",
+    description:
+      "Movie recommendation web application that utilizes the OMDb API to suggest movies based on user preferences.",
+    image: "cinematch.png",
+    tags: ["React.js", "C++"],
+    demoUrl: "https://youtu.be/UmoFKLQDUPE",
+    githubUrl: "https://github.com/Lyra126/movieRecs",
+  }
 ];
 
 export const ProjectsSection = () => {
   return (
     <section id="projects" className="py-24 px-4 relative">
-      <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-5xl items-center items-justify-center flex flex-col">
         <h2 className="text-3xl md:text-4xl font-bold mb-11 text-center">
           {" "}
           Featured Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 flex-col items-center justify-center justify-items-center">
           {projects.map((project) => (
           <div
             key={project.id}
-            className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+            className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover flex flex-col items-center justify-items-center"
           >
-            <div className="h-48 overflow-hidden justify-center items-center flex">
-              {project.image ? (
+            <div className="h-48 overflow-hidden justify-center flex items-center justify-items-center">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-auto h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-              ) : (
-                <div className="w-full h-full flex items-center justify-center bg-muted text-muted-foreground text-sm">
-                  No Image
-                </div>
-              )}
             </div>
-
             <div className="p-6">
               <div className="flex flex-wrap gap-2 mb-4">
                 {project.tags.map((tag) => (
@@ -74,26 +77,29 @@ export const ProjectsSection = () => {
               <p className="text-muted-foreground text-sm mb-4">
                 {project.description}
               </p>
-              <div className="flex justify-between items-center">
-                <div className="flex space-x-3">
-                  <a
-                    href={project.demoUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                  >
-                    <ExternalLink size={20} />
-                  </a>
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                  >
-                    <Github size={20} />
-                  </a>
+             { project.id != 2 ? (
+                <div className="flex justify-between items-center">
+                  <div className="flex space-x-3">
+                    <a
+                      href={project.demoUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <ExternalLink size={20} />
+                    </a>
+                    <a
+                      href={project.githubUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                    >
+                      <Github size={20} />
+                    </a>
+                  </div>
                 </div>
-              </div>
+                ) : (<div></div>)}
+
             </div>
           </div>
         ))}

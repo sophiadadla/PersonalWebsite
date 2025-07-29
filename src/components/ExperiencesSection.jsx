@@ -32,10 +32,10 @@ export const ExperiencesSection = () => {
                   •	Contributed to the codebase of a simulation configuration tool used in naval training, developing in a Linux environment
                 </li>
                 <li>
-                  •	Redesigned and implementing multiple interfaces for a more intuitive UI/UX with React.js and HTML/CSS
+                  •	Redesigned and implemented multiple interfaces for a more intuitive UI/UX with React.js and HTML/CSS
                 </li>
                 <li>
-                  •	Constructed CI/CD pipelines using Robot Framework with Python and Selenium to validate application functionality
+                  •	Validated application functionality by creating automated unit tests using Robot Framework with Python/Selenium
                 </li>
                 <li>
                   •	Travelled to training site to support clients and gather feedback on a new C2 system in order to improve UI/UX 
@@ -46,16 +46,19 @@ export const ExperiencesSection = () => {
             </h4>
               <ul className="text-muted-foreground mb-3" style={{textAlign: "left"}}>
                 <li>
-                  • Collaborated with ONR representative to enhance military training simulation, implementing 3 UI features in JavaScript
+                  • Worked with R&D group to improve UI/UX of an existing DoD-facing unit visualization web app used in naval training
                 </li>
                 <li>
-                  • Created a customizable radio emission heatmap via image-processing, using data structures to speed up rendering by 50%  
+                  • Collaborated with ONR representative, implementing 3 DoD-requested UI features in JavaScript and HTML/CSS
                 </li>
                 <li>
-                  • Improved a DoD-facing 30+ button toolbar with Bootstrap, adding a collapsible modal feature to cut screen clutter by 15%  
+                  • Created a customizable radio emission heatmap via image processing methods, increasing rendering speed by 50% 
                 </li>
                 <li>
-                  • Worked on an Agile team of 20+ engineers to fulfill customer requests on-time, utilizing GitLab for project management
+                  • Improved a 30+ button toolbar with Bootstrap, adding a collapsible modal organization feature to minimize screen clutter 
+                </li>
+                <li>
+                  • Worked in an Agile environment with 20+ engineers to fulfill client requests on-time, managing project with GitLab
                 </li>
               </ul>
           </div>
