@@ -98,7 +98,9 @@ export const ProjectsSection = () => {
                     </a>
                   </div>
                 </div>
-                ) : (<div></div>)}
+                ) : (<div className="flex justify-between items-center">
+                  <div className="flex space-x-3"></div>
+                </div>)}
 
             </div>
           </div>

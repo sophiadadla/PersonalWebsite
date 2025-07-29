@@ -41,6 +41,7 @@ export const ExperiencesSection = () => {
                   •	Travelled to training site to support clients and gather feedback on a new C2 system in order to improve UI/UX 
                 </li>                
               </ul>
+              <br></br>
             <h4 className="mb-1 font-bold text-left text-primary ml-2.5">
               Summer 2024
             </h4>
