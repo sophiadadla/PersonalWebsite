@@ -15,7 +15,7 @@ const projects = [
     title: "TEMPER",
     description:
       "REST API and GUI for a risk-management temperature monitoring system, integrated with an NTI sensor.",
-    image: "internss.jpg",
+    image: "",
     tags: ["React.js", "Python Flask", "PostgreSQL"],
   },
   {
