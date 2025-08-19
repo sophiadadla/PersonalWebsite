@@ -3,6 +3,15 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
+    title: "BloomSight",
+    description: "Real-time Red Tide & algae bloom alerts to help Florida travelers plan safe beach trips.",
+    image: "BSLogo.png",
+    tags: ["React.js", "Python", "Supabase"],
+    demoUrl: "https://www.bloomsight.net/",
+    githubUrl: "https://github.com/theinquisitorjif/bloomsight_webapp_mvp",
+  },
+  {
+    id: 2,
     title: "GatorGoalMate",
     description: "Social media platform for students to set, track, and achieve their academic, personal, and fitness goals.",
     image: "GatorGoalMateLogo (1).png",
@@ -11,7 +20,7 @@ const projects = [
     githubUrl: "https://github.com/lmdulick/GatorGoalMate",
   },
   {
-    id: 2,
+    id: 3,
     title: "TEMPER",
     description:
       "REST API and GUI for a risk-management temperature monitoring system, integrated with an NTI sensor. ",
@@ -19,17 +28,17 @@ const projects = [
     tags: ["React.js", "Python Flask", "PostgreSQL"],
   },
   {
-    id: 3,
+    id: 4,
     title: "PowerPace",
     description:
-      "In progress: Web application for hybrid athletes to monitor strength and cardio activities using their data from the Strava API.",
+      "Web application for hybrid athletes to monitor strength and cardio activities using their data from the Strava API.",
     image: "powerpacelogo.png",
     tags: ["React.js", "Java Spring Boot"],
     // demoUrl: "#",
     githubUrl: "https://github.com/sophiadadla/PowerPace",
   },
   {
-    id: 4,
+    id: 5,
     title: "CineMatch",
     description:
       "Movie recommendation web application that utilizes the OMDb API to suggest movies based on user preferences.",
@@ -77,7 +86,7 @@ export const ProjectsSection = () => {
               <p className="text-muted-foreground text-sm mb-4">
                 {project.description}
               </p>
-             { project.id != 2 ? (
+             { project.id != 3 ? (
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
                     <a
