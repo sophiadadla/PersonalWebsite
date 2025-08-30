@@ -7,7 +7,7 @@ const projects = [
     description: "Real-time Red Tide & algae bloom alerts to help Florida travelers plan safe beach trips.",
     image: "BSLogo.png",
     tags: ["React.js", "Python", "Supabase"],
-    demoUrl: "https://bloomsight-webapp-mvp.vercel.app/",
+    demoUrl: "https://bloomsight-webapp-k3pzh0klc-sophiadadlas-projects.vercel.app/",
     githubUrl: "https://github.com/theinquisitorjif/bloomsight_webapp_mvp",
   },
   {
