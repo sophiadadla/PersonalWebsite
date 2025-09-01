@@ -4,10 +4,10 @@ const projects = [
   {
     id: 1,
     title: "BeachLens",
-    description: "Real-time Red Tide & algae bloom alerts to help Florida travelers plan safe beach trips.",
-    image: "BSLogo.png",
+    description: "Real-time beach conditions and info hub for Florida travellers.",
+    image: "logo-only.png",
     tags: ["React.js", "Python", "Supabase"],
-    demoUrl: "https://bloomsight-webapp-k3pzh0klc-sophiadadlas-projects.vercel.app/",
+    demoUrl: "https://beachlens.net",
     githubUrl: "https://github.com/theinquisitorjif/bloomsight_webapp_mvp",
   },
   {
