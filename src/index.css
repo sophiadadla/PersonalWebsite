@@ -64,8 +64,7 @@
 }
 
 .headshot-style:hover {
-  filter: drop-shadow(0 0 15px #e6afd4);
-  transform: scale(1.02);
+  /* filter: drop-shadow(0 0 15px #e6afd4); */
 }
 
 @layer base {

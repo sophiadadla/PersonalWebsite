@@ -11,17 +11,17 @@ export const ExperiencesSection = () => {
         </h2>
 
         {/* Lockheed Martin Experience */}
-        <div className="flex items-start space-x-6 mb-12" style={{alignItems: "center"}}>
+        <div className="flex flex-col md:flex-row items-center gap-6 mb-12">
           <img
-            className="image-style w-[350px] flex-shrink-0"
+            className="image-style w-full max-w-[280px] md:max-w-[350px] flex-shrink-0"
             src="lockheed-martin.png"
             style={{
-              width: "300px"
+              width: "100%"
             }}
             onClick={() => window.open('https://www.lockheedmartin.com/en-us/index.html', '_blank')}
           ></img>
-          <div style={{padding: "30px"}} className="big-card"> 
-            <h3 className="text-2xl font-semibold whitespace-nowrap overflow-hidden text-ellipsis mb-3" style={{textAlign: "left"}}>
+          <div style={{padding: "20px"}} className="big-card w-full md:w-auto"> 
+            <h3 className="text-xl md:text-2xl font-semibold mb-3 break-words" style={{textAlign: "left"}}>
               Software Engineering Intern at Lockheed Martin
             </h3>
             <h4 className="mb-1 font-bold text-left text-primary ml-2.5">
@@ -65,36 +65,6 @@ export const ExperiencesSection = () => {
           </div>
         </div>
 
-        {/* KidzHack Experience */}
-        <div className="flex items-start space-x-6"  style={{alignItems: "center"}}>
-          <img
-            className="image-style w-[230px] flex-shrink-0" 
-            src="kidzhack.png"
-            style={{
-              width: "300px"
-            }}
-            onClick={() => window.open('https://www.kidzhack.com/', '_blank')}
-          ></img>
-          <div style={{padding: "30px"}} className="big-card">
-            <h3 className="text-2xl font-semibold whitespace-nowrap overflow-hidden text-ellipsis mb-3" style={{textAlign: "left"}}>
-              Software Engineering Intern at KidzHack
-            </h3>
-            <h4 className="mb-1 font-bold text-left text-primary ml-2.5">
-              Spring 2024
-            </h4>
-              <ul className="text-muted-foreground" style={{textAlign: "left"}}>
-                <li>
-                  • Implemented a scalable, cloud-based backend that monitors ~5.5K students' well-being across 10+ US middle schools
-                </li>
-                <li>
-                  • Developed 4 AWS Lambda functions to process ~20K daily HTTP requests from the Angular front-end
-                </li>
-                <li>
-                  • Configured an API Gateway to enable secure communication between user submissions and AWS Lambda functions
-                </li>
-              </ul>
-          </div>
-        </div>
       </div>
     </section>
   );

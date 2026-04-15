@@ -1,14 +1,14 @@
-import { ArrowRight, ExternalLink, Github } from "lucide-react";
+import { ArrowRight, Download, ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
     id: 1,
     title: "BeachLens",
     description: "Real-time beach conditions and info hub for Florida travellers.",
-    image: "logo-only.png",
-    tags: ["React.js", "Python", "Supabase"],
+    image: "turtlelogofinal.png",
+    tags: ["React.js", "TypeScript", "Supabase"],
     demoUrl: "https://beachlens.net",
-    githubUrl: "https://github.com/theinquisitorjif/bloomsight_webapp_mvp",
+    githubUrl: "https://lnkd.in/ezKB9_xA",
   },
   {
     id: 2,
@@ -46,6 +46,16 @@ const projects = [
     tags: ["React.js", "C++"],
     demoUrl: "https://youtu.be/UmoFKLQDUPE",
     githubUrl: "https://github.com/Lyra126/movieRecs",
+  },
+  {
+    id: 6,
+    title: "NewsCurator",
+    description:
+      "A web application that curates news articles based on user preferences and interests.",
+    image: "newscurator.png",
+    tags: ["PHP", "MySQL"],
+    //demoUrl: "",
+    githubUrl: "https://github.com/Aleena-J/NewsCurator-CIS4930",
   }
 ];
 
@@ -89,21 +99,23 @@ export const ProjectsSection = () => {
              { project.id != 3 ? (
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
+                    {project.id !== 4 && project.id !== 6 && (
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    )}
                     <a
                       href={project.githubUrl}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-foreground/80 hover:text-primary transition-colors duration-300"
                     >
-                      <Github size={20} />
+                      {project.id === 1 ? <Download size={20} /> : <Github size={20} />}
                     </a>
                   </div>
                 </div>
