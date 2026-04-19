@@ -54,7 +54,7 @@ const projects = [
       "A web application that curates news articles based on user preferences and interests.",
     image: "newscurator.png",
     tags: ["PHP", "MySQL"],
-    //demoUrl: "",
+    demoUrl: "https://newscurator-cis4930.onrender.com/frontend/login.php",
     githubUrl: "https://github.com/Aleena-J/NewsCurator-CIS4930",
   }
 ];
@@ -99,7 +99,7 @@ export const ProjectsSection = () => {
              { project.id != 3 ? (
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
-                    {project.id !== 4 && project.id !== 6 && (
+                    {project.id !== 4 && (
                       <a
                         href={project.demoUrl}
                         target="_blank"
